@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMORPG Central - Seu Guia Definitivo para MMORPGs</title>
+    <meta name="description" content="Seu guia definitivo para MMORPGs - Builds, guias, notícias e dicas dos melhores jogos online">
+    <meta name="keywords" content="MMORPG, Final Fantasy XIV, Guild Wars 2, World of Warcraft, Warframe, guias, builds, dicas">
+    <meta name="author" content="MMORPG Central">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MMORPG Central - Seu Guia Definitivo para MMORPGs">
+    <meta property="og:description" content="Builds otimizadas, guias detalhados, notícias atualizadas e dicas dos melhores MMORPGs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mmorpgcentral.com">
+    <meta property="og:image" content="https://mmorpgcentral.com/assets/og-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MMORPG Central - Seu Guia Definitivo para MMORPGs">
+    <meta name="twitter:description" content="Builds otimizadas, guias detalhados, notícias atualizadas e dicas dos melhores MMORPGs">
+    <meta name="twitter:image" content="https://mmorpgcentral.com/assets/twitter-image.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="6" x2="10" y1="11" y2="11"></line>
+                        <line x1="8" x2="8" y1="9" y2="13"></line>
+                        <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                        <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                        <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                    </svg>
+                    <span class="logo-text">MMORPG Central</span>
+                </div>
+
+                <nav class="nav" role="navigation" aria-label="Menu principal">
+                    <a href="#" class="nav-link active" tabindex="0">Início</a>
+                    <a href="#games" class="nav-link" tabindex="0">Jogos</a>
+                    <a href="#articles" class="nav-link" tabindex="0">Notícias</a>
+                    <div class="nav-link disabled" title="Disponível em breve">
+                        <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                            <path d="m7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Guias - Em Breve
+                    </div>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn-search" aria-label="Buscar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="m21 21-4.34-4.34"></path>
+                            <circle cx="11" cy="11" r="8"></circle>
+                        </svg>
+                    </button>
+                    <button class="btn-newsletter">Newsletter</button>
+                </div>
+
+                <button class="mobile-menu-btn" aria-label="Menu mobile" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M4 12h16"></path>
+                        <path d="M4 18h16"></path>
+                        <path d="M4 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Seu Guia Definitivo para
+                        <span class="text-gradient">MMORPGs</span>
+                    </h1>
+                    <p class="hero-description">
+                        Builds otimizadas, guias detalhados, notícias atualizadas e dicas dos melhores MMORPGs.
+                        Domine Final Fantasy XIV, Guild Wars 2, World of Warcraft e muito mais.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="document.getElementById('articles').scrollIntoView()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                            </svg>
+                            Ver Notícias
+                        </button>
+                        <button class="btn-secondary disabled" title="Disponível em breve">
+                            <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                <path d="m7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            Explorar Guias - Em Breve
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADSENSE SLOT - Banner horizontal abaixo do header -->
+        <div class="ad-banner">
+            <div class="container">
+                <div class="ad-content">
+                    <button class="ad-close" aria-label="Fechar anúncio">×</button>
+                    <div class="ad-text">
+                        <div class="ad-title">Espaço Publicitário</div>
+                        <div class="ad-subtitle">Banner medium</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Modes Section -->
+        <section class="navigation-modes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Escolha Seu <span class="text-blue">Modo de Navegação</span>
+                    </h2>
+                    <p class="section-description">
+                        Acesse conteúdo especializado dividido entre notícias atualizadas e guias detalhados para seus MMORPGs favoritos.
+                    </p>
+                </div>
+
+                <div class="modes-grid">
+                    <a href="#articles" class="mode-card mode-news" tabindex="0">
+                        <div class="mode-bg"></div>
+                        <div class="mode-content">
+                            <div class="mode-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M15 18h-5"></path>
+                                    <path d="M18 14h-8"></path>
+                                    <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2"></path>
+                                    <rect width="8" height="4" x="10" y="6" rx="1"></rect>
+                                </svg>
+                            </div>
+                            <h3 class="mode-title">Modo Notícias</h3>
+                            <p class="mode-description">
+                                Fique por dentro das últimas novidades, atualizações, eventos e lançamentos do mundo dos MMORPGs.
+                            </p>
+                            <div class="mode-features">
+                                <div class="feature">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                        <polyline points="16 7 22 7 22 13"></polyline>
+                                    </svg>
+                                    <span>Atualizações Diárias</span>
+                                </div>
+                                <div class="feature">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span>Eventos da Comunidade</span>
+                                </div>
+                            </div>
+                            <div class="mode-cta">
+                                Ver Notícias
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="mode-card mode-guides disabled" title="Disponível em breve">
+                        <div class="mode-bg"></div>
+                        <div class="mode-overlay"></div>
+                        <div class="mode-content">
+                            <div class="mode-icon disabled">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M12 7v14"></path>
+                                    <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="mode-title disabled">Modo Guias</h3>
+                            <p class="mode-description disabled">
+                                Domine seus jogos com guias detalhados, builds otimizadas, estratégias e dicas de especialistas.
+                            </p>
+                            <div class="coming-soon">
+                                <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                    <path d="m7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span class="coming-soon-text">Em Breve</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Jogos Cobertos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Guias Publicados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Notícias/Mês</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24h</div>
+                        <div class="stat-label">Atualizações</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADSENSE SLOT - Entre blocos de cards -->
+        <div class="ad-banner ad-banner-large">
+            <div class="container">
+                <div class="ad-content">
+                    <button class="ad-close" aria-label="Fechar anúncio">×</button>
+                    <div class="ad-placeholder">
+                        <div class="ad-icon">AD</div>
+                        <div class="ad-text">
+                            <div class="ad-line"></div>
+                            <div class="ad-line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Games Section -->
+        <section class="games-section" id="games">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Jogos <span class="text-blue">Cobertos</span>
+                    </h2>
+                    <p class="section-description">
+                        Priorizamos jogos com suporte ao público brasileiro: servidores SA, tradução PT-BR e preços regionais.
+                    </p>
+                </div>
+
+                <div class="games-grid">
+                    <!-- Final Fantasy XIV - Alta Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-high">Alta Cobertura</div>
+                            <div class="game-rating">9.2</div>
+                            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #06b6d4; font-size: 2rem; font-weight: bold;">FFXIV</div>
+                            <div class="game-logo">
+                                <div style="color: #06b6d4; font-weight: bold; font-size: 12px;">FF</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Final Fantasy XIV</h3>
+                            <p class="game-description">O MMORPG mais popular com suporte completo ao Brasil, servidores SA e tradução PT-BR.</p>
+                            <div class="game-tags">
+                                <span class="game-tag server-sa">Servidor SA</span>
+                                <span class="game-tag pt-br">PT-BR</span>
+                                <span class="game-tag regional-price">Preços Regionais</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/ffxiv/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guild Wars 2 - Média Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-medium">Média Cobertura</div>
+                            <div class="game-rating">8.8</div>
+                            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #10b981; font-size: 2rem; font-weight: bold;">GW2</div>
+                            <div class="game-logo">
+                                <div style="color: #10b981; font-weight: bold; font-size: 12px;">GW</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Guild Wars 2</h3>
+                            <p class="game-description">MMORPG free-to-play com mecânicas inovadoras e mundo dinâmico.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">Free-to-Play</span>
+                                <span class="game-tag pt-br">PT-BR</span>
+                                <span class="game-tag">PvP Competitivo</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/gw2/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- World of Warcraft - Alta Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-high">Alta Cobertura</div>
+                            <div class="game-rating">8.5</div>
+                            <div style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #f59e0b; font-size: 2rem; font-weight: bold;">WoW</div>
+                            <div class="game-logo">
+                                <div style="color: #f59e0b; font-weight: bold; font-size: 12px;">WoW</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">World of Warcraft</h3>
+                            <p class="game-description">O clássico MMORPG que definiu o gênero, agora com servidores brasileiros.</p>
+                            <div class="game-tags">
+                                <span class="game-tag server-sa">Servidor SA</span>
+                                <span class="game-tag pt-br">PT-BR</span>
+                                <span class="game-tag regional-price">Preços Regionais</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/wow/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Warframe - Baixa Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-low">Baixa Cobertura</div>
+                            <div class="game-rating">7.8</div>
+                            <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #475569 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #8b5cf6; font-size: 1.5rem; font-weight: bold;">Warframe</div>
+                            <div class="game-logo">
+                                <div style="color: #8b5cf6; font-weight: bold; font-size: 10px;">WF</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Warframe</h3>
+                            <p class="game-description">Ação cooperativa futurista com ninjas espaciais e combate frenético.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">Free-to-Play</span>
+                                <span class="game-tag">Ação Cooperativa</span>
+                                <span class="game-tag">Sci-Fi</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/warframe/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New World - Baixa Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-low">Baixa Cobertura</div>
+                            <div class="game-rating">7.5</div>
+                            <div style="background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 50%, #3f5f3f 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #10b981; font-size: 1.5rem; font-weight: bold;">New World</div>
+                            <div class="game-logo">
+                                <div style="color: #10b981; font-weight: bold; font-size: 10px;">NW</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">New World</h3>
+                            <p class="game-description">MMORPG da Amazon com foco em PvP e exploração em um mundo colonial.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">PvP</span>
+                                <span class="game-tag">Exploração</span>
+                                <span class="game-tag">Colonial</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/new-world/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Throne and Liberty - Média Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-medium">Média Cobertura</div>
+                            <div class="game-rating">8.0</div>
+                            <div style="background: linear-gradient(135deg, #2e1a2e 0%, #4a2d4a 50%, #5f3f5f 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #8b5cf6; font-size: 1.2rem; font-weight: bold;">T&L</div>
+                            <div class="game-logo">
+                                <div style="color: #8b5cf6; font-weight: bold; font-size: 10px;">TL</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Throne and Liberty</h3>
+                            <p class="game-description">MMORPG da NCSoft com transformações e combate dinâmico.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">Transformações</span>
+                                <span class="game-tag">PvP</span>
+                                <span class="game-tag">Fantasy</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/throne-and-liberty/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Path of Exile 2 - Baixa Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-low">Baixa Cobertura</div>
+                            <div class="game-rating">8.3</div>
+                            <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #3f3f3f 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #f59e0b; font-size: 1.2rem; font-weight: bold;">PoE2</div>
+                            <div class="game-logo">
+                                <div style="color: #f59e0b; font-weight: bold; font-size: 10px;">PoE</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Path of Exile 2</h3>
+                            <p class="game-description">Sequência do popular ARPG com elementos MMO e mundo compartilhado.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">ARPG</span>
+                                <span class="game-tag">Free-to-Play</span>
+                                <span class="game-tag">Dark Fantasy</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/path-of-exile-2/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lost Ark - Média Prioridade -->
+                    <div class="game-card" tabindex="0">
+                        <div class="game-image">
+                            <div class="game-status priority-medium">Média Cobertura</div>
+                            <div class="game-rating">7.9</div>
+                            <div style="background: linear-gradient(135deg, #2e2e1a 0%, #4a4a2d 50%, #5f5f3f 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #eab308; font-size: 1.2rem; font-weight: bold;">Lost Ark</div>
+                            <div class="game-logo">
+                                <div style="color: #eab308; font-weight: bold; font-size: 10px;">LA</div>
+                            </div>
+                        </div>
+                        <div class="game-content">
+                            <h3 class="game-title">Lost Ark</h3>
+                            <p class="game-description">MMORPG isométrico com combate dinâmico e exploração marítima.</p>
+                            <div class="game-tags">
+                                <span class="game-tag">Isométrico</span>
+                                <span class="game-tag">Free-to-Play</span>
+                                <span class="game-tag">Exploração</span>
+                            </div>
+                            <div class="game-actions">
+                                <button class="btn-primary" onclick="window.location.href='jogos/lost-ark/noticias/index.html'">Ver Notícias</button>
+                                <button class="btn-secondary disabled">Guias - Em Breve</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="games-cta">
+                    <div class="cta-card">
+                        <h3>Não encontrou seu jogo favorito?</h3>
+                        <p>Sugerimos novos jogos baseado no interesse da comunidade brasileira.</p>
+                        <button class="btn-primary">Solicitar Cobertura</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="articles-section" id="articles">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Artigos em <span class="text-gradient">Destaque</span>
+                    </h2>
+                    <p class="section-description">
+                        Conteúdo atualizado diariamente com os melhores guias, builds e notícias do mundo dos MMORPGs.
+                    </p>
+                </div>
+
+                <div class="articles-grid">
+                    <article class="article-card" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/article1-thumbnail.jpg" alt="Guia completo de builds para FFXIV" loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-category">Guias</span>
+                                <span class="article-date">15 Jul 2025</span>
+                            </div>
+                            <h3 class="article-title">Guia Completo de Builds para FFXIV Endwalker</h3>
+                            <p class="article-excerpt">Descubra as melhores builds para todas as classes em Final Fantasy XIV...</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/article2-thumbnail.jpg" alt="Novidades do Guild Wars 2" loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-category">Notícias</span>
+                                <span class="article-date">14 Jul 2025</span>
+                            </div>
+                            <h3 class="article-title">Guild Wars 2: Nova Expansão Anunciada</h3>
+                            <p class="article-excerpt">ArenaNet revela detalhes da próxima grande expansão...</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card" tabindex="0">
+                        <div class="article-image">
+                            <img src="assets/article3-thumbnail.jpg" alt="Dicas para iniciantes em WoW" loading="lazy">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="article-category">Dicas</span>
+                                <span class="article-date">13 Jul 2025</span>
+                            </div>
+                            <h3 class="article-title">10 Dicas Essenciais para Iniciantes em WoW</h3>
+                            <p class="article-excerpt">Começando sua jornada em Azeroth? Confira nossas dicas...</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="articles-cta">
+                    <button class="btn-primary">
+                        Ver Todos os Artigos
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADSENSE SLOT - Banner large -->
+        <div class="ad-banner ad-banner-large">
+            <div class="container">
+                <div class="ad-content">
+                    <button class="ad-close" aria-label="Fechar anúncio">×</button>
+                    <div class="ad-text">
+                        <div class="ad-title">Espaço Publicitário</div>
+                        <div class="ad-subtitle">Banner large</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        </svg>
+                    </div>
+                    <h2 class="newsletter-title">
+                        Fique por Dentro das <span class="text-gradient">Novidades</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Receba semanalmente os melhores guias, builds exclusivas e notícias em primeira mão dos seus MMORPGs favoritos.
+                    </p>
+
+                    <div class="newsletter-features">
+                        <div class="feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                                <path d="M12 8v13"></path>
+                                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+                                <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+                            </svg>
+                            <span>Guias Exclusivos</span>
+                        </div>
+                        <div class="feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg>
+                            <span>Builds Antecipadas</span>
+                        </div>
+                        <div class="feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                            <span>Sem Spam</span>
+                        </div>
+                    </div>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu melhor email" required aria-label="Email para newsletter">
+                        <button type="submit" class="btn-primary">Inscrever-se</button>
+                    </form>
+
+                    <p class="newsletter-disclaimer">
+                        Ao se inscrever, você concorda com nossa política de privacidade. Cancele a qualquer momento.
+                    </p>
+
+                    <div class="newsletter-stats">
+                        <p>Junte-se a <span class="highlight">2.500+</span> jogadores que já recebem nosso conteúdo exclusivo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar para Desktop - ADSENSE SLOT -->
+    <aside class="sidebar" aria-label="Publicidade">
+        <div class="sidebar-ad">
+            <div class="ad-content">
+                <button class="ad-close" aria-label="Fechar anúncio">×</button>
+                <div class="ad-text">
+                    <div class="ad-title">Sidebar Ad</div>
+                    <div class="ad-subtitle">300x600</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <line x1="6" x2="10" y1="11" y2="11"></line>
+                            <line x1="8" x2="8" y1="9" y2="13"></line>
+                            <line x1="15" x2="15.01" y1="12" y2="12"></line>
+                            <line x1="18" x2="18.01" y1="10" y2="10"></line>
+                            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"></path>
+                        </svg>
+                        <span class="logo-text">MMORPG Central</span>
+                    </div>
+                    <p class="footer-description">
+                        Seu guia definitivo para MMORPGs. Builds, guias, notícias e dicas dos melhores jogos online.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#games">Jogos</a></li>
+                            <li><a href="#articles">Notícias</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h3>Jogos</h3>
+                        <ul>
+                            <li><a href="jogos/ffxiv/noticias/index.html">Final Fantasy XIV</a></li>
+                            <li><a href="jogos/gw2/noticias/index.html">Guild Wars 2</a></li>
+                            <li><a href="jogos/wow/noticias/index.html">World of Warcraft</a></li>
+                            <li><a href="jogos/warframe/noticias/index.html">Warframe</a></li>
+                            <li><a href="#">Outros MMORPGs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        © 2025 MMORPG Central. Todos os direitos reservados.
+                    </div>
+                    <div class="made-with">
+                        Feito com
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg>
+                        para a comunidade gamer
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <p>Este site não é afiliado oficialmente aos jogos mencionados. Todas as marcas registradas pertencem aos seus respectivos proprietários.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
